@@ -123,8 +123,8 @@ Transaction data is stored in <code>transactions.json</code> and rendered dynami
   <li>The project is deployed using <b>Vercel</b></li>
   <li>Two links are provided for submission:</li>
   <ul>
-    <li>GitHub repository (source code)</li>
-    <li>Vercel live project link</li>
+    <li>GitHub repository (source code): https://kutluhangil.github.io/goit-react-hw-01/ </li>
+    <li>Vercel live project link: https://goit-react-hw-01-rose-one.vercel.app </li>
   </ul>
 </ul>
 
