@@ -1,149 +1,147 @@
-<!DOCTYPE html>
-<html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <title>goit-react-hw-01 | React Bileşenler</title>
-  </head>
-  <body>
-    <h1>📘 goit-react-hw-01 — React: Bileşenler</h1>
+📘 React Homework 01 — Components
 
-    <h2>📌 Proje Açıklaması</h2>
-    <p>
-      Bu proje, React’in temel kavramlarından biri olan <b>bileşen (component)</b>
-      yapısını öğrenmek ve uygulamak amacıyla hazırlanmıştır.
-      Projede kullanıcı profili, arkadaş listesi ve işlem geçmişi gibi
-      farklı arayüz bileşenleri oluşturulmuş ve tek bir sayfada
-      <code>&lt;App&gt;</code> bileşeni altında render edilmiştir.
-    </p>
+This project was created as part of the React module and focuses on building reusable React components, passing data via props, and organizing a project using modern React best practices.
 
-    <h2>🔗 Canlı Proje ve Kaynak Kod</h2>
-    <ul>
-      <li>
-        <b>GitHub Repository:</b>
-        <a href="https://github.com/kutluhangil/goit-react-hw-01" target="_blank">
-          https://github.com/kutluhangil/goit-react-hw-01
-        </a>
-      </li>
-      <li>
-        <b>Canlı Demo (Vercel):</b>
-        <a href="https://goit-react-hw-01.vercel.app" target="_blank">
-          https://goit-react-hw-01.vercel.app
-        </a>
-      </li>
-    </ul>
+The application is built with Vite, styled using CSS Modules, and deployed to Vercel.
 
-    <h2>⚙️ Kullanılan Teknolojiler</h2>
-    <ul>
-      <li>React</li>
-      <li>Vite</li>
-      <li>JavaScript (ES6+)</li>
-      <li>CSS Modules</li>
-      <li>Prettier</li>
-    </ul>
+⸻
 
-    <h2>📁 Proje Yapısı</h2>
-    <pre>
+🔗 Links
+	•	🔴 Live Demo (Vercel):
+👉 PASTE YOUR VERCEL LINK HERE
+	•	📦 GitHub Repository:
+👉 https://github.com/kutluhangil/goit-react-hw-01
+
+⸻
+
+🛠 Technologies Used
+	•	React
+	•	Vite
+	•	JavaScript (ES6+)
+	•	CSS Modules
+	•	Prettier
+	•	ESLint
+
+⸻
+
+📂 Project Structure
+
+Each component is placed in its own folder inside the src/components directory.
+Every component folder contains:
+	•	a .jsx file (component logic)
+	•	a .module.css file (component styles)
+
 src/
- ├── components/
- │   ├── Profile/
- │   │   ├── Profile.jsx
- │   │   └── Profile.module.css
- │   ├── FriendList/
- │   │   ├── FriendList.jsx
- │   │   └── FriendList.module.css
- │   ├── FriendListItem/
- │   │   ├── FriendListItem.jsx
- │   │   └── FriendListItem.module.css
- │   ├── TransactionHistory/
- │   │   ├── TransactionHistory.jsx
- │   │   └── TransactionHistory.module.css
- │   └── App/
- │       ├── App.jsx
- │       └── App.module.css
- ├── userData.json
- ├── friends.json
- ├── transactions.json
- └── main.jsx
-    </pre>
+├── components/
+│   ├── App/
+│   │   ├── App.jsx
+│   │   └── App.module.css
+│   ├── Profile/
+│   │   ├── Profile.jsx
+│   │   └── Profile.module.css
+│   ├── FriendList/
+│   │   ├── FriendList.jsx
+│   │   └── FriendList.module.css
+│   ├── FriendListItem/
+│   │   ├── FriendListItem.jsx
+│   │   └── FriendListItem.module.css
+│   └── TransactionHistory/
+│       ├── TransactionHistory.jsx
+│       └── TransactionHistory.module.css
+│
+├── userData.json
+├── friends.json
+├── transactions.json
+└── main.jsx
 
-    <h2>✅ Genel Gereksinimler</h2>
-    <ul>
-      <li>Proje Vite kullanılarak oluşturulmuştur.</li>
-      <li>Uygulama Vercel üzerinde başarıyla deploy edilmiştir.</li>
-      <li>Tarayıcı konsolunda herhangi bir hata veya uyarı bulunmamaktadır.</li>
-      <li>Tüm bileşenler <code>src/components</code> klasörü altında düzenlenmiştir.</li>
-      <li>Her bileşen için ayrı JSX ve <code>.module.css</code> dosyaları kullanılmıştır.</li>
-      <li>Bileşenler varsayılan dışa aktarma (<code>export default</code>) ile aktarılmıştır.</li>
-      <li>Tüm bileşenler <code>&lt;App&gt;</code> bileşeni içerisinde render edilmiştir.</li>
-      <li>Props’lar doğru ve eksiksiz şekilde iletilmiştir.</li>
-      <li>Kod Prettier ile formatlanmıştır.</li>
-      <li>Stil yönetimi CSS Modules ile yapılmıştır.</li>
-    </ul>
 
-    <h2>🧩 Görev 1 — Sosyal Medya Profili</h2>
-    <p>
-      <code>&lt;Profile&gt;</code> bileşeni, kullanıcıya ait profil bilgilerini
-      prop’lar aracılığıyla alır ve ekranda gösterir.
-    </p>
-    <ul>
-      <li>name — Kullanıcı adı</li>
-      <li>tag — Kullanıcı etiketi</li>
-      <li>location — Konum bilgisi</li>
-      <li>image — Avatar bağlantısı</li>
-      <li>stats — Followers, views ve likes bilgileri</li>
-    </ul>
-    <p>
-      Kullanıcı verileri <code>userData.json</code> dosyasında saklanmış ve
-      App bileşeninde içe aktarılmıştır.
-    </p>
+⸻
 
-    <h2>👥 Görev 2 — Arkadaş Listesi</h2>
-    <p>
-      <code>&lt;FriendList&gt;</code> bileşeni, arkadaş nesnelerinden oluşan
-      bir diziyi prop olarak alır ve her arkadaş için
-      <code>&lt;FriendListItem&gt;</code> bileşenini render eder.
-    </p>
-    <ul>
-      <li>avatar — Avatar görseli</li>
-      <li>name — Arkadaş adı</li>
-      <li>isOnline — Çevrimiçi durumu</li>
-    </ul>
-    <p>
-      Online durumuna göre metin ve renk CSS sınıfları ile kontrol edilmiştir.
-      Arkadaş verileri <code>friends.json</code> dosyasında tutulmaktadır.
-    </p>
+✅ Project Requirements Fulfilled
+	•	✔ Project created using Vite
+	•	✔ Components built using React
+	•	✔ All components exported using default export
+	•	✔ All components rendered inside the root <App /> component
+	•	✔ Props passed correctly to all components
+	•	✔ Static data moved to JSON files
+	•	✔ Styling implemented with CSS Modules
+	•	✔ Code formatted with Prettier
+	•	✔ No errors or warnings in the browser console
+	•	✔ Project deployed to Vercel
 
-    <h2>💳 Görev 3 — İşlem Geçmişi</h2>
-    <p>
-      <code>&lt;TransactionHistory&gt;</code> bileşeni, işlem verilerini tablo
-      formatında görüntüler.
-    </p>
-    <ul>
-      <li>type — İşlem türü</li>
-      <li>amount — Tutar</li>
-      <li>currency — Para birimi</li>
-    </ul>
-    <p>
-      İşlem verileri <code>transactions.json</code> dosyasından alınarak
-      App bileşenine prop olarak iletilmiştir.
-    </p>
+⸻
 
-    <h2>🚀 Kurulum ve Çalıştırma</h2>
-    <pre>
+📌 Tasks Overview
+
+🧩 Task 1 — Social Media Profile
+
+A <Profile /> component that displays user information:
+
+Props:
+	•	name
+	•	tag
+	•	location
+	•	image
+	•	stats (followers, views, likes)
+
+User data is stored in userData.json and passed to the component via props.
+
+⸻
+
+🧩 Task 2 — Friend List
+
+A <FriendList /> component that renders a list of friends.
+
+Each friend is displayed using a <FriendListItem /> component.
+
+Props:
+	•	avatar
+	•	name
+	•	isOnline
+
+The online status is visually indicated using conditional styling.
+
+Friend data is stored in friends.json.
+
+⸻
+
+🧩 Task 3 — Transaction History
+
+A <TransactionHistory /> component that renders a table of financial transactions.
+
+Props:
+	•	items (array of transaction objects)
+
+Each transaction includes:
+	•	type
+	•	amount
+	•	currency
+
+Transaction data is stored in transactions.json.
+
+⸻
+
+🚀 How to Run Locally
+
 npm install
 npm run dev
-    </pre>
 
-    <h2>📦 Production Build</h2>
-    <pre>
+
+⸻
+
+📦 Build for Production
+
 npm run build
-    </pre>
 
-    <h2>👨‍💻 Geliştirici</h2>
-    <p>
-      Bu proje GoIT React eğitimi kapsamında hazırlanmıştır.
-    </p>
 
-    <p><b>React öğrenme yolculuğunun ilk adımı 🚀</b></p>
-  </body>
-</html>
+⸻
+
+🌐 Deployment
+
+The project is deployed using Vercel.
+The production build is automatically generated and served after deployment.
+
+⸻
+
+👨‍💻 Author
+Kutluhan Gil
