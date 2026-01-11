@@ -11,8 +11,10 @@
 }
 
 .avatar {
-    margin-bottom: 10px;
-    border-radius: 4px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    width: 64px;
+    height: 64px;
 }
 
 .name {
