@@ -1,147 +1,140 @@
-📘 React Homework 01 — Components
+<h1>⚛️ goit-react-hw-01 — React Components</h1>
 
-This project was created as part of the React module and focuses on building reusable React components, passing data via props, and organizing a project using modern React best practices.
+<p>
+This project is part of the GoIT React curriculum.
+It focuses on building reusable <b>React components</b>, working with <b>props</b>,
+component composition, and basic project structure using <b>Vite</b>.
+</p>
 
-The application is built with Vite, styled using CSS Modules, and deployed to Vercel.
+<hr />
 
-⸻
+<h2>🎯 Project Requirements</h2>
+<ul>
+  <li>Create a repository named <b>goit-react-hw-01</b></li>
+  <li>Build the project using <b>Vite</b></li>
+  <li>Deploy the project and provide a <b>Vercel live link</b></li>
+  <li>No errors or warnings in the browser console</li>
+  <li>Use <b>default export</b> for all components</li>
+  <li>All components must be rendered inside the <code>&lt;App&gt;</code> component</li>
+  <li>All props must be passed correctly</li>
+  <li>Code must be clean, readable, and formatted with <b>Prettier</b></li>
+  <li>Styles must be implemented using <b>CSS Modules</b></li>
+</ul>
 
-🔗 Links
-	•	🔴 Live Demo (Vercel):
-👉 PASTE YOUR VERCEL LINK HERE
-	•	📦 GitHub Repository:
-👉 https://github.com/kutluhangil/goit-react-hw-01
+<hr />
 
-⸻
+<h2>🛠️ Technologies Used</h2>
+<ul>
+  <li><b>React</b> — Component-based UI</li>
+  <li><b>Vite</b> — Fast project setup and build tool</li>
+  <li><b>JavaScript (ES6+)</b></li>
+  <li><b>CSS Modules</b> — Scoped component styles</li>
+  <li><b>Prettier</b> — Code formatting</li>
+</ul>
 
-🛠 Technologies Used
-	•	React
-	•	Vite
-	•	JavaScript (ES6+)
-	•	CSS Modules
-	•	Prettier
-	•	ESLint
+<hr />
 
-⸻
+<h2>📂 Project Structure</h2>
 
-📂 Project Structure
-
-Each component is placed in its own folder inside the src/components directory.
-Every component folder contains:
-	•	a .jsx file (component logic)
-	•	a .module.css file (component styles)
-
+<pre>
 src/
-├── components/
-│   ├── App/
-│   │   ├── App.jsx
-│   │   └── App.module.css
-│   ├── Profile/
-│   │   ├── Profile.jsx
-│   │   └── Profile.module.css
-│   ├── FriendList/
-│   │   ├── FriendList.jsx
-│   │   └── FriendList.module.css
-│   ├── FriendListItem/
-│   │   ├── FriendListItem.jsx
-│   │   └── FriendListItem.module.css
-│   └── TransactionHistory/
-│       ├── TransactionHistory.jsx
-│       └── TransactionHistory.module.css
-│
-├── userData.json
-├── friends.json
-├── transactions.json
-└── main.jsx
+ ├── components/
+ │   ├── Profile/
+ │   │   ├── Profile.jsx
+ │   │   └── Profile.module.css
+ │   ├── FriendList/
+ │   │   ├── FriendList.jsx
+ │   │   └── FriendList.module.css
+ │   ├── FriendListItem/
+ │   │   ├── FriendListItem.jsx
+ │   │   └── FriendListItem.module.css
+ │   ├── TransactionHistory/
+ │   │   ├── TransactionHistory.jsx
+ │   │   └── TransactionHistory.module.css
+ ├── App.jsx
+ ├── userData.json
+ ├── friends.json
+ └── transactions.json
+</pre>
 
+<hr />
 
-⸻
+<h2>📌 Task 1 — Social Media Profile</h2>
 
-✅ Project Requirements Fulfilled
-	•	✔ Project created using Vite
-	•	✔ Components built using React
-	•	✔ All components exported using default export
-	•	✔ All components rendered inside the root <App /> component
-	•	✔ Props passed correctly to all components
-	•	✔ Static data moved to JSON files
-	•	✔ Styling implemented with CSS Modules
-	•	✔ Code formatted with Prettier
-	•	✔ No errors or warnings in the browser console
-	•	✔ Project deployed to Vercel
+<p>
+The <b>Profile</b> component displays user information using props:
+</p>
 
-⸻
+<ul>
+  <li><code>name</code> — user name</li>
+  <li><code>tag</code> — social tag without @</li>
+  <li><code>location</code> — city and country</li>
+  <li><code>image</code> — avatar URL</li>
+  <li><code>stats</code> — followers, views, likes</li>
+</ul>
 
-📌 Tasks Overview
+<p>
+User data is stored in <code>userData.json</code> and imported into <code>App.jsx</code>.
+</p>
 
-🧩 Task 1 — Social Media Profile
+<hr />
 
-A <Profile /> component that displays user information:
+<h2>📌 Task 2 — Friend List</h2>
 
-Props:
-	•	name
-	•	tag
-	•	location
-	•	image
-	•	stats (followers, views, likes)
+<p>
+The <b>FriendList</b> component renders a list of friends based on an array of objects.
+Each friend is displayed using the <b>FriendListItem</b> component.
+</p>
 
-User data is stored in userData.json and passed to the component via props.
+<ul>
+  <li><code>avatar</code> — avatar image</li>
+  <li><code>name</code> — friend name</li>
+  <li><code>isOnline</code> — online status (true / false)</li>
+</ul>
 
-⸻
+<p>
+Friend data is stored in <code>friends.json</code>.
+Online status is styled conditionally using CSS classes.
+</p>
 
-🧩 Task 2 — Friend List
+<hr />
 
-A <FriendList /> component that renders a list of friends.
+<h2>📌 Task 3 — Transaction History</h2>
 
-Each friend is displayed using a <FriendListItem /> component.
+<p>
+The <b>TransactionHistory</b> component displays banking transactions in a table.
+</p>
 
-Props:
-	•	avatar
-	•	name
-	•	isOnline
+<ul>
+  <li><code>id</code> — unique transaction identifier</li>
+  <li><code>type</code> — transaction type</li>
+  <li><code>amount</code> — transaction amount</li>
+  <li><code>currency</code> — currency code</li>
+</ul>
 
-The online status is visually indicated using conditional styling.
+<p>
+Transaction data is stored in <code>transactions.json</code> and rendered dynamically.
+</p>
 
-Friend data is stored in friends.json.
+<hr />
 
-⸻
+<h2>🚀 Deployment</h2>
+<ul>
+  <li>The project is deployed using <b>Vercel</b></li>
+  <li>Two links are provided for submission:</li>
+  <ul>
+    <li>GitHub repository (source code)</li>
+    <li>Vercel live project link</li>
+  </ul>
+</ul>
 
-🧩 Task 3 — Transaction History
+<hr />
 
-A <TransactionHistory /> component that renders a table of financial transactions.
+<h2>✅ Final Notes</h2>
+<p>
+This project demonstrates core React fundamentals such as component composition,
+props usage, reusable UI blocks, and clean project structure.
+It serves as a foundation for more advanced React topics.
+</p>
 
-Props:
-	•	items (array of transaction objects)
-
-Each transaction includes:
-	•	type
-	•	amount
-	•	currency
-
-Transaction data is stored in transactions.json.
-
-⸻
-
-🚀 How to Run Locally
-
-npm install
-npm run dev
-
-
-⸻
-
-📦 Build for Production
-
-npm run build
-
-
-⸻
-
-🌐 Deployment
-
-The project is deployed using Vercel.
-The production build is automatically generated and served after deployment.
-
-⸻
-
-👨‍💻 Author
-Kutluhan Gil
+<p><b>Happy coding! 🚀</b></p>
