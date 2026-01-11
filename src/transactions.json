@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1e0700a2-5183-4291-85cc-2065a036a683",
+        "type": "invoice",
+        "amount": "964.82",
+        "currency": "USD"
+    },
+    {
+        "id": "c31330e6-2774-4298-be19-d72370c0f326",
+        "type": "payment",
+        "amount": "686.50",
+        "currency": "USD"
+    },
+    {
+        "id": "c71df99c-3004-4452-afa6-5389617300c7",
+        "type": "invoice",
+        "amount": "260.91",
+        "currency": "USD"
+    },
+    {
+        "id": "d1354141-11d2-43bb-a5a6-77884d852a0a",
+        "type": "withdrawal",
+        "amount": "915.13",
+        "currency": "USD"
+    },
+    {
+        "id": "76628ef6-2391-4c75-bdcf-8869c968f921",
+        "type": "deposit",
+        "amount": "314.92",
+        "currency": "USD"
+    },
+    {
+        "id": "848e6584-82a0-4b36-963a-2a2977464a66",
+        "type": "withdrawal",
+        "amount": "698.83",
+        "currency": "USD"
+    },
+    {
+        "id": "31278ffc-c6f3-4e4b-b5d1-7c96366113b6",
+        "type": "deposit",
+        "amount": "636.56",
+        "currency": "USD"
+    },
+    {
+        "id": "c7c8c67c-d64e-4b6e-827d-927909ddb53c",
+        "type": "withdrawal",
+        "amount": "239.31",
+        "currency": "USD"
+    }
+]
