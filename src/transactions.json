@@ -3,48 +3,54 @@
         "id": "1e0700a2-5183-4291-85cc-2065a036a683",
         "type": "invoice",
         "amount": "964.82",
-        "currency": "USD"
+        "currency": "LRD"
     },
     {
-        "id": "c31330e6-2774-4298-be19-d72370c0f326",
+        "id": "a30f821b-4d25-4ff0-abdd-e340b3f0dd2b",
         "type": "payment",
         "amount": "686.50",
-        "currency": "USD"
+        "currency": "WST"
     },
     {
-        "id": "c71df99c-3004-4452-afa6-5389617300c7",
+        "id": "44dca67a-8e5a-4798-bf8e-b15efd4e1abd",
         "type": "invoice",
-        "amount": "260.91",
-        "currency": "USD"
+        "amount": "828.62",
+        "currency": "UGX"
     },
     {
-        "id": "d1354141-11d2-43bb-a5a6-77884d852a0a",
+        "id": "ea8ed3dc-2b68-4a53-905a-53ecb0adef33",
         "type": "withdrawal",
-        "amount": "915.13",
-        "currency": "USD"
+        "amount": "527.80",
+        "currency": "ALL"
     },
     {
-        "id": "76628ef6-2391-4c75-bdcf-8869c968f921",
+        "id": "63ca02f9-d637-46b5-9237-f3b24425e029",
+        "type": "payment",
+        "amount": "862.44",
+        "currency": "AUD"
+    },
+    {
+        "id": "ed0263e8-59a5-4bf1-87e0-2bb88e53dc34",
+        "type": "withdrawal",
+        "amount": "907.00",
+        "currency": "GEL"
+    },
+    {
+        "id": "4eaab41b-b967-40ac-82ed-85fc66f646f1",
         "type": "deposit",
-        "amount": "314.92",
-        "currency": "USD"
+        "amount": "103.10",
+        "currency": "BWP"
     },
     {
-        "id": "848e6584-82a0-4b36-963a-2a2977464a66",
+        "id": "9648a350-8469-42d5-8bf3-18090de5fe67",
         "type": "withdrawal",
-        "amount": "698.83",
-        "currency": "USD"
+        "amount": "322.32",
+        "currency": "MRO"
     },
     {
-        "id": "31278ffc-c6f3-4e4b-b5d1-7c96366113b6",
-        "type": "deposit",
-        "amount": "636.56",
-        "currency": "USD"
-    },
-    {
-        "id": "c7c8c67c-d64e-4b6e-827d-927909ddb53c",
-        "type": "withdrawal",
-        "amount": "239.31",
-        "currency": "USD"
+        "id": "9c5c25fb-1a95-4b2f-8d1f-4c4426d677cc",
+        "type": "invoice",
+        "amount": "14.79",
+        "currency": "PYG"
     }
 ]
